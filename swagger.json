@@ -1,15 +1,15 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Cars Api",
-    "description": "Cars Api",
+    "title": "Cars and Drivers API",
+    "description": "Cars and Drivers",
     "version": "1.0.0"
   },
   "host": "cse341-node-zjc2.onrender.com",
   "basePath": "/",
-  "schemes": ["https"],
-
-
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/": {
       "get": {
@@ -24,11 +24,18 @@
         }
       }
     },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/cars/": {
       "get": {
-        "tags": [
-          "Cars"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -37,15 +44,12 @@
           "200": {
             "description": "OK"
           },
-          "400": {
-            "description": "Bad Request"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "post": {
-        "tags": [
-          "Cars"
-        ],
         "description": "",
         "parameters": [
           {
@@ -74,8 +78,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
           "412": {
             "description": "Precondition Failed"
@@ -88,9 +92,6 @@
     },
     "/cars/{id}": {
       "get": {
-        "tags": [
-          "Cars"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -109,13 +110,16 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "put": {
-        "tags": [
-          "Cars"
-        ],
         "description": "",
         "parameters": [
           {
@@ -150,8 +154,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -165,9 +169,6 @@
         }
       },
       "delete": {
-        "tags": [
-          "Cars"
-        ],
         "description": "",
         "parameters": [
           {
@@ -178,8 +179,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -192,9 +193,6 @@
     },
     "/drivers/": {
       "get": {
-        "tags": [
-          "Drivers"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -203,15 +201,12 @@
           "200": {
             "description": "OK"
           },
-          "400": {
-            "description": "Bad Request"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "post": {
-        "tags": [
-          "Drivers"
-        ],
         "description": "",
         "parameters": [
           {
@@ -246,8 +241,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
           "412": {
             "description": "Precondition Failed"
@@ -260,9 +255,6 @@
     },
     "/drivers/{id}": {
       "get": {
-        "tags": [
-          "Drivers"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -281,13 +273,16 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "put": {
-        "tags": [
-          "Drivers"
-        ],
         "description": "",
         "parameters": [
           {
@@ -328,8 +323,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -343,9 +338,6 @@
         }
       },
       "delete": {
-        "tags": [
-          "Drivers"
-        ],
         "description": "",
         "parameters": [
           {
@@ -356,8 +348,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
