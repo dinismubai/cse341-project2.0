@@ -24,17 +24,8 @@
         }
       }
     },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/cars/": {
+    
+    "/cars": {
       "get": {
         "description": "",
         "produces": [
@@ -191,7 +182,7 @@
         }
       }
     },
-    "/drivers/": {
+    "/drivers": {
       "get": {
         "description": "",
         "produces": [
