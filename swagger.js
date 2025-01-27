@@ -6,7 +6,7 @@ const doc = {
         description: 'Cars and Drivers'
     },
     host: 'https://cse341-node-zjc2.onrender.com',
-    schemas: ['http', 'https']
+    schemas: ['https', 'http']
 };
 
 const outputFile = './swagger.json';
