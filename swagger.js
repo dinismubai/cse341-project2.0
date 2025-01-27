@@ -5,12 +5,11 @@ const doc = {
         title: 'Cars and Drivers API',
         description: 'Cars and Drivers'
     },
-    host: 'cse341-node-zjc2.onrender.com',
+    host: 'localhost:3002',
     schemas: ['https', 'http']
 };
 
 const outputFile = './swagger.json';
 const endpointsFiles = ['./routes/index.js'];
 
-//this will generate swagger.json
 swaggerAutogen(outputFile, endpointsFiles, doc);

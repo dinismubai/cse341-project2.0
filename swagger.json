@@ -5,7 +5,7 @@
     "description": "Cars and Drivers",
     "version": "1.0.0"
   },
-  "host": "cse341-node-zjc2.onrender.com",
+  "host": "cse341-project2-0.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -24,16 +24,7 @@
         }
       }
     },
-    "/swagger.json": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
+    
     "/cars/": {
       "get": {
         "description": "",
