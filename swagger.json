@@ -24,8 +24,17 @@
         }
       }
     },
-    
-    "/cars": {
+    "/swagger.json": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/cars/": {
       "get": {
         "description": "",
         "produces": [
@@ -182,7 +191,7 @@
         }
       }
     },
-    "/drivers": {
+    "/drivers/": {
       "get": {
         "description": "",
         "produces": [
@@ -353,7 +362,7 @@
     }
   },
   "schemas": [
-    "http",
-    "https"
+    "https",
+    "http"
   ]
 }
