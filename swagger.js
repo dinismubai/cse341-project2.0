@@ -5,7 +5,7 @@ const doc = {
         title: 'Cars and Drivers API',
         description: 'Cars and Drivers'
     },
-    host: 'cse341-node-zjc2.onrender.com',
+    host: 'https://cse341-node-zjc2.onrender.com',
     schemas: ['http', 'https']
 };
 
