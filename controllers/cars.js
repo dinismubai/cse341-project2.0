@@ -44,7 +44,7 @@ const getSingle = async (req, res) => {
 
         // Validate if the provided ID is a valid MongoDB ObjectId
         if (!ObjectId.isValid(id)) {
-            return res.status(400).json({ error: 'Invalid ID format. Please provide a valid MongoDB ObjectId.' });
+            return res.status(400).json({ error: 'Invalid ID format. Please provide a valid ID with the correct format.' });
         }
 
         const carId = new ObjectId(id);
